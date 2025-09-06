@@ -3,26 +3,19 @@
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
-        <nav style="width: 100%; background: #222; padding: 1em 0; display: flex; justify-content: flex-end;">
-            <a href="/login" style="color: white; margin: 0 2em; text-decoration: none;">Login</a>
-            <a href="/register" style="color: white; margin: 0 2em; text-decoration: none;">Register</a>
-        </nav>
         <div id="top">
             <div class="title">
-                <h1>Music Library</h1>
+                <h1>Music Library</h1> 
             </div>
         </div>
-        <div>
-            <% songs.forEach((song) => { %>
-            <p>
-                <span class="song-title"><%= song.title %></span>
-                <span class="song-artist">- <%= song.artist %></span>
-            </p>
-            <% }) %>
-        </div>
-
-        <a href="/add">
-            <button type="button">Add Song</button>
-        </a>
+        <form action="/" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button id="add-btn" type="submit">Login</button>
+        </form>
+        <p>
+            Don't have an account? <a href="/register">Register here</a>
+        </p>
     </body>
 </html>
+

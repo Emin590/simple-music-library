@@ -21,6 +21,15 @@ input[type="text"] {
     border: 1px solid #ccc;
 }
 
+input[type="password"] {
+    font-size: 1.2em;
+    padding: 12px 20px;
+    margin: 10px 0px 0px 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
 button {
     background-color: #04AA6D; /* Green */
     border: none;
