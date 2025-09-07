@@ -1,21 +1,59 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="/styles.css">
-    </head>
-    <body>
-        <div id="top">
-            <div class="title">
-                <h1>Music Library</h1> 
-            </div>
-        </div>
-        <form action="/" method="POST">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button id="add-btn" type="submit">Login</button>
-        </form>
-        <p>
-            Don't have an account? <a href="/register">Register here</a>
-        </p>
-    </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Music Library</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
 
+  <!-- Card container -->
+  <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
+    
+    <!-- Title -->
+    <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">Music Library</h1>
+    
+    <!-- Login form -->
+    <form action="/" method="POST" class="space-y-4">
+      <div>
+        <label class="block text-gray-700 font-medium mb-1" for="username">Username</label>
+        <input 
+          type="text" 
+          name="username" 
+          id="username" 
+          placeholder="Enter your username" 
+          required 
+          class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        >
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-1" for="password">Password</label>
+        <input 
+          type="password" 
+          name="password" 
+          id="password" 
+          placeholder="Enter your password" 
+          required 
+          class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        >
+      </div>
+
+      <button 
+        type="submit" 
+        class="w-full bg-indigo-500 text-white py-2 rounded hover:bg-indigo-600 transition-colors"
+      >
+        Login
+      </button>
+    </form>
+
+    <!-- Register link -->
+    <p class="text-center text-gray-600 mt-4">
+      Don't have an account? 
+      <a href="/register" class="text-indigo-500 hover:underline">Register here</a>
+    </p>
+
+  </div>
+  
+</body>
+</html>
